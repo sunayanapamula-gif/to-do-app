@@ -1,90 +1,207 @@
-<<<<<<< HEAD
+/* General App Styles */
 .app {
-  max-width: 500px;
-  margin: 50px auto;
+  max-width: 600px;
+  margin: 40px auto;
   text-align: center;
   font-family: Arial, sans-serif;
+  transition: background 0.3s, color 0.3s;
+  padding: 20px;
+  border-radius: 8px;
 }
 
+/* Light Theme */
+.app.light {
+  background: #f9f9f9;
+  color: #000;
+}
+
+/* Dark Theme */
+.app.dark {
+  background: #1e1e1e;
+  color: #fff;
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+  margin-bottom: 20px;
+  padding: 8px 12px;
+  cursor: pointer;
+  background-color: #444;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+.theme-toggle:hover {
+  background-color: #666;
+}
+
+/* Progress Bar */
+.progress-container {
+  width: 100%;
+  background-color: #e0e0e0;
+  border-radius: 6px;
+  margin: 15px 0;
+  height: 20px;
+}
+.progress-bar {
+  height: 100%;
+  background-color: #007bff;
+  border-radius: 6px;
+  transition: width 0.3s ease;
+}
+
+/* Input Section */
 .input-section {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   margin-bottom: 20px;
 }
-
-input {
+input[type="text"], input[type="date"], select {
   padding: 8px;
-  width: 70%;
-  margin-right: 10px;
-}
-
-button {
-  padding: 8px 12px;
-  cursor: pointer;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-li {
-  display: flex;
-  justify-content: space-between;
-  margin: 8px 0;
-  padding: 8px;
-  background: #f4f4f4;
+  margin: 5px;
+  border: 1px solid #ccc;
   border-radius: 4px;
 }
-
-li.completed {
-  text-decoration: line-through;
-  color: gray;
-}
-
 textarea {
   width: 100%;
   margin-top: 10px;
   padding: 8px;
   font-family: monospace;
-}
-=======
-.App {
-  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Buttons */
+button {
+  padding: 8px 12px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  margin: 5px;
+}
+button:hover {
+  background-color: #0056b3;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Clear Button */
+.clear-btn {
+  background-color: #dc3545;
+}
+.clear-btn:hover {
+  background-color: #c82333;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Download Button */
+.download-btn {
+  background-color: #17a2b8;
+}
+.download-btn:hover {
+  background-color: #138496;
+}
+
+/* Filter Buttons */
+.filter-section {
+  margin: 20px 0;
+}
+.filter-section button {
+  background-color: #28a745;
+}
+.filter-section button:hover {
+  background-color: #218838;
+}
+
+/* Search Bar */
+.search-bar {
+  width: 100%;
+  padding: 8px;
+  margin: 15px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Task List */
+ul {
+  list-style: none;
+  padding: 0;
+}
+li {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: flex-start;
+  margin: 8px 0;
+  padding: 8px;
+  background: #f4f4f4;
+  border-radius: 4px;
+  cursor: grab;
+}
+li:active {
+  cursor: grabbing;
+}
+.app.dark li {
+  background: #333;
+}
+li.completed span {
+  text-decoration: line-through;
+  color: gray;
 }
 
-.App-link {
-  color: #61dafb;
+/* Category & Priority Labels */
+li strong {
+  margin-right: 8px;
+  color: #007bff;
+}
+.app.dark li strong {
+  color: #66b2ff;
+}
+li em {
+  margin-left: 6px;
+  font-style: normal;
+  font-weight: bold;
+  color: #ff5722;
+}
+.app.dark li em {
+  color: #ffa07a;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Due Date Label */
+.due-date {
+  margin-left: 8px;
+  font-weight: bold;
+  color: #dc3545;
 }
->>>>>>> edacba113a5cf127c70e9f542872fe42389b3525
+.app.dark .due-date {
+  color: #ff6b6b;
+}
+
+/* Progress Bar Container */
+.progress-container {
+  width: 100%;
+  background-color: #e0e0e0;
+  border-radius: 6px;
+  margin: 15px 0;
+  height: 20px;
+  overflow: hidden;
+}
+
+/* Progress Bar Fill */
+.progress-bar {
+  height: 100%;
+  border-radius: 6px;
+  transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+/* Colors based on completion percentage */
+.progress-bar.low {
+  background-color: #dc3545; /* Red for 0–30% */
+}
+
+.progress-bar.medium {
+  background-color: #ffc107; /* Yellow for 31–70% */
+}
+
+.progress-bar.high {
+  background-color: #28a745; /* Green for 71–100% */
+}

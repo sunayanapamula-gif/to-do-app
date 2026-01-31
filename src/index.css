@@ -1,63 +1,23 @@
 body {
-<<<<<<< HEAD
   font-family: Arial, sans-serif;
   background: #f9f9f9;
   margin: 0;
   padding: 0;
 }
 
+/* General App Styles */
 .app {
-  max-width: 500px;
-  margin: 50px auto;
+  max-width: 600px;
+  margin: 40px auto;
   text-align: center;
+  font-family: Arial, sans-serif;
+  transition: background 0.3s, color 0.3s;
+  padding: 20px;
+  border-radius: 8px;
 }
 
-.input-section {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
+/* Light Theme */
+.app.light {
+  background: #f9f9f9;
+  color: #000;
 }
-
-input {
-  padding: 8px;
-  width: 70%;
-  margin-right: 10px;
-}
-
-button {
-  padding: 8px 12px;
-  cursor: pointer;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-li {
-  display: flex;
-  justify-content: space-between;
-  margin: 8px 0;
-  padding: 8px;
-  background: #f4f4f4;
-  border-radius: 4px;
-}
-
-li.completed {
-  text-decoration: line-through;
-  color: gray;
-}
-=======
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
->>>>>>> edacba113a5cf127c70e9f542872fe42389b3525
