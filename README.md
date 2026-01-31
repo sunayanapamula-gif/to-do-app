@@ -1,37 +1,36 @@
 # 📝 Developer To‑Do App
 
-![React](https://img.shields.io/badge/React-18-blue?logo=react)
-![GitHub Pages](https://img.shields.io/badge/Deployed-GitHub%20Pages-success?logo=github)
-![License](https://img.shields.io/badge/License-MIT-green)
-![Status](https://img.shields.io/badge/Status-Live-brightgreen)
-![Issues](https://img.shields.io/github/issues/sunayanapamula-gif/to-do-app)
-![Stars](https://img.shields.io/github/stars/sunayanapamula-gif/to-do-app?style=social)
+![GitHub last commit](https://img.shields.io/github/last-commit/sunayanapamula-gif/to-do-app)
+![GitHub repo size](https://img.shields.io/github/repo-size/sunayanapamula-gif/to-do-app)
+![GitHub stars](https://img.shields.io/github/stars/sunayanapamula-gif/to-do-app?style=social)
+![GitHub forks](https://img.shields.io/github/forks/sunayanapamula-gif/to-do-app?style=social)
+
+A **feature‑rich React productivity app** designed for developers.  
+It supports task management, code snippets, categories, priorities, due dates, drag‑and‑drop reordering, progress tracking, and Markdown export.
 
 ---
 
 ## 🚀 Live Demo
-👉 [View the app here](https://sunayanapamula-gif.github.io/to-do-app)
+👉 [View App on GitHub Pages](https://sunayanapamula-gif.github.io/to-do-app)
 
 ---
 
 ## ✨ Features
-- ✅ Add, toggle, and delete tasks  
-- ✅ Attach optional code snippets with syntax highlighting  
-- ✅ LocalStorage persistence (tasks saved after refresh)  
-- ✅ Dark/Light mode toggle  
-- ✅ Categories (Work, Personal, Code)  
-- ✅ Category filters  
-- ✅ Search bar for tasks/snippets  
-- ✅ Task priority (High, Medium, Low)  
-- ✅ Due date picker + upcoming tasks filter (Today/This Week)  
-- ✅ Clear completed tasks button  
-- ✅ Progress bar showing completion percentage  
-- ✅ Drag‑and‑drop task reordering  
-- ✅ Export tasks as Markdown (`tasks.md`)  
+
+- 🔍 **Search bar** to quickly find tasks/snippets  
+- 🎯 **Priority levels** (High, Medium, Low)  
+- 📅 **Due dates** + filters for Today / This Week  
+- 🗂️ **Categories** (Work, Personal, Code)  
+- 🌗 **Dark/Light mode toggle**  
+- 📊 **Progress bar** with dynamic colors + percentage  
+- 📥 **Markdown export** for sharing tasks  
+- 🔄 **Drag‑and‑drop reordering** for flexible prioritization  
+- 🧹 **Clear completed tasks** button  
 
 ---
 
 ## 📸 Screenshots
+
 ### Light Mode
 ![Light Mode Screenshot](docs/light-mode.png)
 
@@ -46,9 +45,12 @@
 
 ---
 
-## 🛠️ Getting Started
+## 🛠️ Installation
 
-### 1. Clone the repository
+Clone the repo and install dependencies:
+
 ```bash
 git clone https://github.com/sunayanapamula-gif/to-do-app.git
 cd to-do-app
+npm install
+npm start
